@@ -1,3 +1,8 @@
+:root {
+    --fuente-principal: Quicksand;
+  }
+  
+
 body {
     display: flex;
     flex-direction: column;
@@ -8,10 +13,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1{
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+}
+
 input {
     margin-bottom: 10px;
     padding: 10px;
     width: 300px;
+    border-radius: 10px;
+    color: #000;
+    border-color: #191919;
+    font-size: var(--fuente-principal);
 }
 
 button {
@@ -20,16 +34,33 @@ button {
 }
 
 .btn-generarQR {
-    background-color: blue;
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+    background-color: #0f2f76;
     color: azure;
     border-radius: 10px;
+    border-color: #0f2f76;
+    border: none;
+}
+
+.btn-generarQR:hover{
+    background-color: #1441a5;
+    border-color: #1441a5;
 }
 
 #descargarQR {
-    background-color: aqua;
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+    background-color: #00ffff;
     color: black;
     border-radius: 10px;
-    border-color: aqua;
+    border-color: #00ffff;
+    border: none;
+}
+
+#descargarQR:hover{
+    background-color: #53ecec;
+    border-color: #53ecec;
 }
 
 #qrcode {
