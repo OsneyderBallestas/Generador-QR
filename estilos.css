@@ -69,22 +69,22 @@ button {
 
 .botones-container {
     display: flex;
-    gap: 1rem; /* Espaciado entre los botones */
+    gap: 1rem;
 }
 
 #descargarSVG {
     font-family: var(--fuente-principal);
     font-weight: 600;
-    background-color: #ff00ff; /* Cambia esto al color que prefieras */
-    color: white; /* Color del texto */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ff00ff;
+    color: white; 
+    border-radius: 10px;
     border: none;
-    padding: 10px 20px; /* Tamaño del botón */
+    padding: 10px 20px;
     cursor: pointer;
 }
 
 #descargarSVG:hover {
-    background-color: #d600d6; /* Cambia el color al hacer hover */
+    background-color: #d600d6;
     border-color: #d600d6;
 }
 
@@ -110,8 +110,8 @@ button {
     }
 
     .botones-container button {
-        width: 80%; /* Ajusta el ancho del botón */
-        margin-bottom: 10px; /* Espaciado entre los botones */
+        width: 80%;
+        margin-bottom: 10px;
     }
 
     h1 {

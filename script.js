@@ -4,7 +4,7 @@ function generarQR() {
     var texto = document.getElementById('texto').value;
     var contenedorQR = document.getElementById('qrcode');
 
-    // Limpiar el contenedor QR antes de generar uno nuevo
+
     contenedorQR.innerHTML = '';
 
     if (texto) {
@@ -14,19 +14,18 @@ function generarQR() {
             data: texto,
             dotsOptions: {
                 color: "#000000",
-                type: "rounded" // Aquí aplicamos el estilo curvado
+                type: "rounded"
             },
             cornersSquareOptions: {
-                type: "extra-rounded" // Bordes con esquinas redondeadas
+                type: "extra-rounded"
             },
             backgroundOptions: {
-                color: "#ffffff", // Fondo blanco
+                color: "#ffffff",
             }
         });
 
         qrCode.append(contenedorQR);
 
-        // Mostrar los botones de descarga después de que se haya generado el QR
         document.getElementById('descargarQR').style.display = 'inline-block';
         document.getElementById('descargarSVG').style.display = 'inline-block';
     } else {
