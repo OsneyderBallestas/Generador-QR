@@ -13,12 +13,15 @@
     <h1>Generador de Códigos QR</h1>
     <div id="qrcode"></div>
     <input type="text" id="texto" placeholder="Ingresa tu link aquí">
+    
+    <!-- Sección de los botones -->
     <div class="botones-container">
         <button class="btn-generarQR" onclick="generarQR()">Generar QR</button>
-        <button id="descargarQR" onclick="descargarImagenQR()" style="display: none;">Descargar QR</button>
+        <button id="descargarQR" onclick="descargarImagenQR()" style="display: none;">Descargar QR en PNG</button>
+        <button id="descargarSVG" onclick="descargarSVG()" style="display: none;">Descargar QR en SVG</button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
